@@ -4,6 +4,6 @@ arch:
 language: java
 jdk:
   - openjdk11
-script:
-  - mvn -U -B -e clean install -DskipTests -Dinvoker.skip=true -Prat
-  - mvn -B -e test -Ptest
+#script:
+#  - mvn -U -B -e clean install -DskipTests -Dinvoker.skip=true -Prat
+#  - mvn -B -e test -Ptest
