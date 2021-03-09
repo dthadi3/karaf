@@ -3,4 +3,7 @@ arch:
   - ppc64le
 language: java
 jdk:
-  - openjdk8
+  - openjdk11
+script:
+  - mvn -U -B -e clean install -DskipTests -Dinvoker.skip=true -Prat
+  - mvn -B -e test -Ptest
